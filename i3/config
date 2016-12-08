@@ -1,8 +1,8 @@
 # Feh background
-exec --no-startup-id feh --bg-tile ~/pictures/d77bXcB.png
+exec_always --no-startup-id feh --bg-tile ~/pictures/d77bXcB.png
 
 # Compton
-exec compton -b
+exec --no-startup-id compton -b
 
 # Set mod to alt
 set $mod Mod1
@@ -166,4 +166,8 @@ bindsym $mod+x exec "i3lock-fancy -p -- scrot -z"
 bindsym $mod+g exec chromium
 
 # open applications on specific workspaces
-assign [class="Chromium"] workspace 5
+assign [class="Chromium"] workspace 2
+
+# autorun these programs
+exec discord-canary
+exec chromium
